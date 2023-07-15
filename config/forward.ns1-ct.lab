@@ -1,0 +1,18 @@
+$ORIGIN ns1.ct.lab.
+$TTL 86400
+@   IN  SOA pdc1app1002.ns1.ct.lab. admin.ct-lab.com. (
+        2023071501   ; serial
+        3600         ; refresh
+        1800         ; retry
+        604800       ; expire
+        86400 )      ; minimum TTL
+;
+; define nameservers
+    IN  NS  pdc1app1002.ns1.ct.lab.
+;
+
+; IP addresses and hostnames
+pdc1app1002.ns1.ct.lab. IN  A   20.169.0.5
+;
+; client records
+pdc1app1001 IN  A   20.169.0.6
