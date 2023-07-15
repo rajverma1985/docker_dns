@@ -1,0 +1,22 @@
+$ORIGIN 0.169.20.in-addr.arpa.
+$TTL    86400
+@   IN  SOA pdc1app1002.ns1.ct.lab.    admin.ns1-lab.com. (
+        2023071401  ; serial
+        3600        ; refresh
+        1800        ; retry
+        604800      ; expire
+        86400 )     ; minimum TTL
+;
+;nameservers
+    IN  NS  pdc1app1002.ns1.ct.lab.
+;
+;nameserver IP addresses
+    IN  A   20.169.0.5
+;
+; client IP Address
+    IN  A   20.169.0.6
+; nameserver PTR records
+10  IN  PTR pdc1app1002.ns1.ct.lab.
+;
+; client PTR records
+20  IN  PTR pdc1app1001.ldap.ct.
